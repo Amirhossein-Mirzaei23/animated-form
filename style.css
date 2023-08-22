@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:#000110f8;
+}
+.main{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    border: 3px solid black;
+}
+.citop{
+    position:absolute ;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left:460px;
+    margin-top: 80px;
+    z-index: -1;
+    text-align: center;
+    background: linear-gradient(#133863,#609CE1);
+    animation: around 4s 800ms ease-in-out infinite;
+}
+.h4{
+    display: inline-block;
+    white-space: nowrap;
+    margin: 30px 0px;
+    color: #fcfcfc;
+    text-shadow: 1px 1px 20px black, 0 0 15px rgb(255, 213, 0), 2px 2px 25px darkorange;
+    animation:  3s linear 200ms infinite;
+}
+.stella{
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 15px;
+    margin-top: 48px;
+    color: #fcfcfc;
+    text-shadow: 1px 1px 20px black, 0 0 15px blue, 2px 2px 25px darkblue;
+    animation: 3s linear 800ms infinite;
+}
+@keyframes themoon {
+    0%{
+        transform: rotateY(0deg);
+        transform: translate3d(10px);
+
+    }
+    25%{
+        transform: rotateY(45deg);
+
+    }
+    50%{
+        transform: rotateY(70deg);
+
+    }
+    75%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+
+    }
+}
+.cibutom{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 720px;
+    margin-top: 410px;
+    z-index: -1;
+    background: linear-gradient(#FE9772,#A22C02);
+    animation: around 4s 200ms ease-in-out infinite;
+}
+.form{
+    position: absolute;
+    width: 270px;
+    height: 320px;
+    background:#85928e;
+    background-color: rgba(255, 252, 252, 0.2);
+    margin: 130px 500px 0;
+    border-radius: 10px;
+    color: #fcfcfc;
+    border: 1px solid black;
+    z-index: 2;
+}
+#h1{
+    margin:30px 80px 0px;
+    white-space: nowrap;
+    
+}
+#username{
+    width: 230px;
+    height: 35px;
+}
+.username{
+display: inline-block;
+margin-left: 22px;
+}
+#password{
+    width: 230px;
+    height: 35px;
+}
+.password{
+    display: inline-block;
+    margin-left: 22px;
+}
+.button{
+    width: 220px;
+    height: 40px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: rgba(26, 96, 33, 0.391);
+    animation: hover 4s ease-in-out 200ms infinite;}
+@keyframes around {
+    0%{
+        transform: scale(1);
+        transform: translate3d(10px);
+
+    }
+    25%{
+        transform: scale(1.2);
+
+    }
+    50%{
+        transform: scale(1.5);
+
+    }
+    75%{
+        transform: scale(1.2);
+
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
+@keyframes hover {
+    0%{
+        transform: rotateY(0deg);
+        transform: translate3d(10px);
+
+    }
+    25%{
+        transform: rotateY(30deg);
+
+    }
+    50%{
+        transform:rotateY(-30deg);
+
+    }
+    75%{
+        transform: rotateY(10deg);
+
+    }
+    100%{
+        transform: rotateY(0deg);
+
+    }   
+}
